@@ -30,3 +30,15 @@ def get_mask_account(account_number: int) -> str:
     if len(account_str) < 4 or not account_str.isdigit():
         raise ValueError("Номер счета должен содержать хотя бы 4 цифры.")
     return f"**{account_str[-4:]}"
+
+
+def mask_account_card(number: str) -> str:
+    """
+    Маскировка номера счёта или карты
+    :param number: номер счёта или номер карты
+    :return: замаскированный номер
+    """
+    if "Счет" in number:
+        return get_mask_account(int(number[5:]))
+    else:
+        return get_mask_card_number(int(number.split()[-1]))
