@@ -42,4 +42,3 @@ def mask_account_card(number: str) -> str:
     except Exception as e:
         # Общая обработка неожиданных ошибок
         raise Exception(f"Произошла ошибка: {str(e)}")
-"""СКАЙНЕТ ПРИШЁЛ"""
