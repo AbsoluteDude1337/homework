@@ -1,7 +1,8 @@
 from datetime import datetime
+from typing import Any
 
 
-def filter_by_state(my_list: list, state: str = "EXECUTED") -> list:
+def filter_by_state(my_list: list[dict[str, Any]], state: str = "EXECUTED") -> list[dict[str, Any]]:
     """
        Функция фильтрует список словарей по ключу 'state'.
        :param my_list: список словарей, содержащих ключ 'state'
@@ -12,7 +13,7 @@ def filter_by_state(my_list: list, state: str = "EXECUTED") -> list:
     return result
 
 
-def sort_by_date(data, ascending=False):
+def sort_by_date(data: list[dict[str, Any]], ascending: bool = False) -> list[dict[str, Any]]:
     """
         Сортирует список словарей по ключу 'date'.
 
