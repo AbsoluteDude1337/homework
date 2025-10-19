@@ -10,6 +10,9 @@
 - Функция filter_by_state фильтрует спиcок словарей по ключу 'state'
 - Функция sort_by_date сортирует список словарей по ключу 'date'
 
+Тесты:
+- Следующие функции успешно прошли тест: get_mask_card_number, get_mask_account, get_date, mask_account_card, filter_by_state, sort_by_date
+
 ## Установка:
 
 1. Клонируйте репозиторий:
