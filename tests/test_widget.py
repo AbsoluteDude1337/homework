@@ -2,4 +2,8 @@ from src.widget import get_date
 
 
 def test_get_date():
-    assert get_get_date(01.02.2004) == 'ДД.ММ.ГГГГ'
+    assert get_date(01022004) == "ДД.ММ.ГГГГ"
+
+
+def test_mask_account_card():
+    assert get_mask_account_card() == ''
